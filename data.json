@@ -3,218 +3,188 @@
     "Self Help": [
       {
         "title": "Atomic Habits",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg",
-        "review": "A powerful guide on how tiny changes can lead to remarkable results."
+        "image": "https://m.media-amazon.com/images/I/91bYsX41DVL._SL1500_.jpg",
+        "review": "A practical guide to building good habits and breaking bad ones.",
+        "type": "Book"
       },
       {
         "title": "The Power of Now",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/71Xb5T6O3-L.jpg",
-        "review": "Helps readers focus on the present moment for spiritual growth."
+        "image": "https://m.media-amazon.com/images/I/61Ij8nLooNL._UF1000,1000_QL80_.jpg",
+        "review": "Focuses on mindfulness and living fully in the present moment.",
+        "type": "Book"
       },
       {
         "title": "Think and Grow Rich",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/81p1L85KinL.jpg",
-        "review": "A motivational classic teaching principles of wealth and success."
+        "image": "https://m.media-amazon.com/images/I/81p1L85KinL._SL1500_.jpg",
+        "review": "Classic guide to personal and financial success through mindset.",
+        "type": "Book"
+      },
+      {
+        "title": "Deep Work",
+        "image": "https://m.media-amazon.com/images/I/71din4TLubL._UF1000,1000_QL80_.jpg",
+        "review": "Teaches the value of focused, undistracted work in a distracted world.",
+        "type": "Book"
       }
     ],
     "Psychology": [
       {
         "title": "Thinking, Fast and Slow",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/81u%2B-Z1bNIL.jpg",
-        "review": "Explores the two systems that drive the way we think."
+        "image": "https://m.media-amazon.com/images/I/71f6DceqZAL.jpg",
+        "review": "Explains the two systems of thinking and how they affect decisions.",
+        "type": "Book"
       },
       {
         "title": "The Psychology of Money",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/71g2ednj0JL.jpg",
-        "review": "Insights into how emotions and behavior affect financial decisions."
+        "image": "https://m.media-amazon.com/images/I/71g2ednj0JL._SL1500_.jpg",
+        "review": "Shows how behavior is more important than math in personal finance.",
+        "type": "Book"
       },
       {
-        "title": "Man’s Search for Meaning",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/71UypkUjStL.jpg",
-        "review": "A Holocaust survivor shares his insights on purpose and resilience."
+        "title": "Man\u2019s Search for Meaning",
+        "image": "https://m.media-amazon.com/images/I/61157LApbuL.jpg",
+        "review": "A Holocaust survivor reflects on finding meaning in life.",
+        "type": "Book"
       }
     ],
     "Drama": [
       {
         "title": "The Kite Runner",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/81-350dS-mL.jpg",
-        "review": "A deeply emotional tale of friendship, betrayal, and redemption."
+        "image": "https://m.media-amazon.com/images/I/81IzbD2IiIL.jpg",
+        "review": "An emotional story of friendship, betrayal, and redemption in Afghanistan.",
+        "type": "Book"
       },
       {
         "title": "A Thousand Splendid Suns",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/81cY-MV2%2B5L.jpg",
-        "review": "A powerful portrayal of women in war-torn Afghanistan."
+        "image": "https://m.media-amazon.com/images/I/81xIPfJ6iUL.jpg",
+        "review": "A compelling story of two women and their endurance during war.",
+        "type": "Book"
       }
     ],
-    "Science": [],
     "Non-fiction": [
       {
         "title": "Sapiens: A Brief History of Humankind",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/713jIoMO3UL.jpg",
-        "review": "An engaging narrative of human history from early man to today."
+        "image": "https://m.media-amazon.com/images/I/713jIoMO3UL._SL1500_.jpg",
+        "review": "A broad overview of human evolution, culture, and society.",
+        "type": "Book"
       },
       {
         "title": "Educated",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/81WojUxbbFL.jpg",
-        "review": "A memoir about growing up in a strict and abusive household and finding freedom through education."
+        "image": "https://m.media-amazon.com/images/I/81WojUxbbFL._SL1500_.jpg",
+        "review": "A memoir of a woman who escapes a strict, abusive household through education.",
+        "type": "Book"
       },
       {
         "title": "The Body Keeps the Score",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/81R%2Bt3m1K4L.jpg",
-        "review": "Explores how trauma reshapes the body and mind."
+        "image": "https://m.media-amazon.com/images/I/71Ha3OShqSL.jpg",
+        "review": "Explores how trauma reshapes the brain and body, and paths to healing.",
+        "type": "Book"
       }
     ],
-    "Technology": [
-      {
-        "title": "The Innovators",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/81bbjGZ4zvL.jpg",
-        "review": "Chronicles the pioneers who made the digital revolution possible."
-      },
-      {
-        "title": "Hooked: How to Build Habit-Forming Products",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/71qB7T8k-ML.jpg",
-        "review": "A guide for product designers to create addictive experiences."
-      }
-    ]
+    "summary": "A curated list of insightful, emotional, and educational book reviews across genres like Self Help, Psychology, Drama, and Non-fiction."
   },
   "MovieReviews": {
     "Drama": [
       {
         "title": "The Shawshank Redemption",
-        "image": "https://m.media-amazon.com/images/I/81nC-cYoUOL._AC_SL1500_.jpg",
-        "review": "A man wrongfully imprisoned finds hope and friendship behind bars."
+        "image": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",
+        "review": "A wrongly convicted man finds hope and friendship in prison.",
+        "type": "Movie"
       },
       {
         "title": "Forrest Gump",
-        "image": "https://m.media-amazon.com/images/I/61+Vf7d+x-L._AC_SL1000_.jpg",
-        "review": "The story of a simple man’s extraordinary life journey."
+        "image": "https://m.media-amazon.com/images/S/pv-target-images/9fe3eef6b0b80d9440cccaf618c2b7785a433b96a7812bb4e8e18945b4e7a231.jpg",
+        "review": "The life journey of a simple yet extraordinary man.",
+        "type": "Movie"
       },
       {
         "title": "The Pursuit of Happyness",
-        "image": "https://m.media-amazon.com/images/I/51pHPNiFvGL._AC_.jpg",
-        "review": "A moving biopic about a man’s struggle for success and fatherhood."
+        "image": "https://upload.wikimedia.org/wikipedia/en/8/81/Poster-pursuithappyness.jpg",
+        "review": "A man's struggle for success and fatherhood against all odds.",
+        "type": "Movie"
       }
     ],
-    "Romantic Thriller": [
-      {
-        "title": "Before I Go to Sleep",
-        "image": "https://m.media-amazon.com/images/I/51+6xTzJxhL.jpg",
-        "review": "A woman wakes each day with no memory of her past, caught in a web of secrets."
-      },
-      {
-        "title": "The Tourist",
-        "image": "https://m.media-amazon.com/images/I/71mR7zOZ1UL._AC_SY679_.jpg",
-        "review": "An ordinary man is dragged into international intrigue and romance."
-      }
-    ],
-    "Crime Thriller": [
+    "Thriller": [
       {
         "title": "Zodiac",
-        "image": "https://m.media-amazon.com/images/I/81H9zrz7OyL._AC_SY741_.jpg",
-        "review": "Investigators try to track down the mysterious Zodiac killer."
+        "image": "https://m.media-amazon.com/images/I/71f+zMfEqBL._UF1000,1000_QL80_.jpg",
+        "review": "True story of a cryptic serial killer and those trying to catch him.",
+        "type": "Movie"
       },
       {
         "title": "Prisoners",
-        "image": "https://m.media-amazon.com/images/I/91cN3PffUBL._AC_SL1500_.jpg",
-        "review": "A father takes matters into his own hands when his daughter is kidnapped."
+        "image": "https://upload.wikimedia.org/wikipedia/en/6/63/Prisoners2013Poster.jpg",
+        "review": "A desperate father takes extreme steps after his daughter is kidnapped.",
+        "type": "Movie"
       },
       {
         "title": "Seven",
-        "image": "https://m.media-amazon.com/images/I/81iJzA-Cb0L._AC_SL1500_.jpg",
-        "review": "Two detectives hunt a serial killer inspired by the seven deadly sins."
+        "image": "https://m.media-amazon.com/images/I/71UoYMvTdHL._UF1000,1000_QL80_.jpg",
+        "review": "Two detectives chase a killer inspired by the seven deadly sins.",
+        "type": "Movie"
       }
     ],
     "Romance": [
       {
         "title": "The Notebook",
-        "image": "https://m.media-amazon.com/images/I/81zLrDq3i9L._AC_SL1500_.jpg",
-        "review": "A heartbreaking and timeless story of love and loss."
+        "image": "https://m.media-amazon.com/images/M/MV5BZjE0ZjgzMzYtMTAxYi00NGMzLThmZDktNzFlMzA2MWRmYWQ0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "review": "A touching love story spanning decades, full of passion and heartache.",
+        "type": "Movie"
       },
       {
         "title": "Pride & Prejudice",
-        "image": "https://m.media-amazon.com/images/I/91B13TbyXbL._AC_SL1500_.jpg",
-        "review": "Jane Austen's classic tale of love, status, and misunderstandings."
+        "image": "https://m.media-amazon.com/images/M/MV5BMTA1NDQ3NTcyOTNeQTJeQWpwZ15BbWU3MDA0MzA4MzE@._V1_FMjpg_UX1000_.jpg",
+        "review": "Jane Austen\u2019s timeless tale of love, status, and misunderstandings.",
+        "type": "Movie"
       },
       {
         "title": "Me Before You",
-        "image": "https://m.media-amazon.com/images/I/81kXVqpFYUL._AC_SL1500_.jpg",
-        "review": "A woman bonds with a paralyzed man in an emotional love story."
+        "image": "https://upload.wikimedia.org/wikipedia/en/f/fd/Me_Before_You_%28film%29.jpg",
+        "review": "A caretaker bonds with a paralyzed man in this emotional journey.",
+        "type": "Movie"
       }
     ],
-    "Science": [],
-    "Biopic": [
-      {
-        "title": "The Imitation Game",
-        "image": "https://m.media-amazon.com/images/I/81F8H8qq5JL._AC_SL1500_.jpg",
-        "review": "The story of Alan Turing, who cracked the Nazi Enigma code."
-      },
-      {
-        "title": "Bohemian Rhapsody",
-        "image": "https://m.media-amazon.com/images/I/81BY6ooyjZL._AC_SL1500_.jpg",
-        "review": "A celebration of Freddie Mercury and Queen’s rise to fame."
-      }
-    ]
-  },
-  "MyExperience": {
-    "Self Help": [
-      {
-        "title": "My journey with meditation",
-        "review": "Started with small 10-minute sessions. Helped me reduce stress and improve focus."
-      },
-      {
-        "title": "Overcoming procrastination",
-        "review": "Using Pomodoro technique and habit stacking, I became more productive."
-      }
-    ]
+    "summary": "Detailed movie reviews spanning drama, thrillers, and romance genres highlighting storytelling, characters, and emotional impact."
   },
   "InterestingFacts": {
     "Animals": [
       {
-        "title": "Octopus has 3 hearts",
-        "review": "Two pump blood to the gills, and one pumps it to the rest of the body."
+        "title": "Octopuses have three hearts",
+        "review": "Two pump blood to the gills, and one to the body. During swimming, one heart stops!",
+        "type": "Fact"
       },
       {
         "title": "Elephants mourn their dead",
-        "review": "They show signs of grief and visit the bones of deceased elephants."
+        "review": "They touch bones of their lost ones and show signs of grief.",
+        "type": "Fact"
       },
       {
-        "title": "A snail can sleep for 3 years",
-        "review": "Some desert snails can hibernate to survive harsh conditions."
+        "title": "Snails can sleep for 3 years",
+        "review": "Some snails hibernate to survive dry or extreme environments.",
+        "type": "Fact"
       }
-    ]
-  },
-  "TVSeriesReviews": {
-    "Romance": [
-      {
-        "title": "Bridgerton",
-        "image": "https://m.media-amazon.com/images/I/81Bk4mFMIuL._AC_SL1500_.jpg",
-        "review": "Lavish period drama packed with romance and scandal."
-      },
-      {
-        "title": "Outlander",
-        "image": "https://m.media-amazon.com/images/I/81boQloXw6L._AC_SL1500_.jpg",
-        "review": "A time-traveling romance with intense historical settings."
-      }
-    ]
+    ],
+    "summary": "Fascinating animal facts that spark curiosity about nature\u2019s wonders and oddities."
   },
   "BookExcerpts": {
     "Self Help": [
       {
         "title": "Atomic Habits",
-        "excerpt": "You do not rise to the level of your goals. You fall to the level of your systems."
+        "excerpt": "You do not rise to the level of your goals. You fall to the level of your systems.",
+        "type": "Excerpt"
       },
       {
         "title": "The 7 Habits of Highly Effective People",
-        "excerpt": "Begin with the end in mind."
+        "excerpt": "Begin with the end in mind.",
+        "type": "Excerpt"
       }
     ],
-    "Yoga": [],
-    "Drama": [],
     "Non-fiction": [
       {
         "title": "Sapiens",
-        "excerpt": "You could never convince a monkey to give you a banana by promising him limitless bananas after death in monkey heaven."
+        "excerpt": "You could never convince a monkey to give you a banana by promising him limitless bananas after death in monkey heaven.",
+        "type": "Excerpt"
       }
-    ]
+    ],
+    "summary": "Inspirational and thought-provoking excerpts from popular self-help and non-fiction books."
   }
 }

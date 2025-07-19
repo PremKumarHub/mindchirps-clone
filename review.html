@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Review Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      height: auto;
+    }
+    .category {
+      color: white;
+      background-color: #007bff;
+      padding: 4px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .summary, .full-review {
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card" id="review-card">
+    <div class="category" id="review-category">Category</div>
+    <div class="title" id="review-title">Title</div>
+    <img src="" alt="Review Image" id="review-image" />
+    <div class="summary">
+      <div class="section-title">Summary</div>
+      <p id="review-summary">Loading...</p>
+    </div>
+    <div class="full-review">
+      <div class="section-title">Review</div>
+      <p id="review-content">Loading...</p>
+    </div>
+  </div>
+
+  <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const titleParam = urlParams.get('title');
+  const typeParam = urlParams.get('type');
+
+  fetch('data.json')
+    .then(res => res.json())
+    .then(data => {
+      let allReviews = [];
+
+      Object.values(data.BookReviews || {}).flat().forEach(item => {
+        if (item.type === 'Book') allReviews.push(item);
+      });
+
+      Object.values(data.MovieReviews || {}).flat().forEach(item => {
+        if (item.type === 'Movie') allReviews.push(item);
+      });
+
+      const review = allReviews.find(
+        r => r.title === titleParam && r.type === typeParam
+      );
+
+      if (review) {
+        // Now populate the HTML elements
+        document.getElementById('review-category').textContent = review.type;
+        document.getElementById('review-title').textContent = review.title;
+
+        const imageElement = document.getElementById('review-image');
+        if (review.image) {
+          imageElement.src = review.image;
+          imageElement.alt = review.title;
+        } else {
+          imageElement.style.display = 'none';
+        }
+
+        document.getElementById('review-summary').textContent = review.summary || 'No summary available.';
+        document.getElementById('review-content').textContent = review.review || 'No review content available.';
+      } else {
+        document.getElementById('review-card').innerHTML = `<p>Review not found.</p>`;
+      }
+    })
+    .catch(err => {
+      console.error('Failed to load review:', err);
+      document.getElementById('review-card').innerHTML = `<p>Error loading review data.</p>`;
+    });
+</script>
+
+
+</body>
+</html>

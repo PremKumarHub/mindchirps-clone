@@ -130,6 +130,41 @@ body {
 .read-more:hover {
   text-decoration: underline;
 }
+.pagination-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination li {
+  margin: 0 3px;
+}
+
+.pagination li a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  background-color: #f0f0f0;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.pagination li.active a {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+
 
 /* Sidebar */
 .sidebar {
@@ -245,17 +280,33 @@ body {
     margin: 4px 0;
   }
  
-.tags span {
-  display: inline-block;
-  padding: 0.3rem 0.6rem;
-  margin: 0.2rem;
-  background: #e1e7f0;
-  border-radius: 3px;
-  font-size: 0.9rem;
+.tags-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+  height: 200px;
+  overflow-y: auto;         /* Add scrollbar if content overflows */
+  columns: 2;               /* Two vertical columns */
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
-.tags ul {
-  
-  padding-left: 20px; /* Needed to show bullets properly */
+
+.tags-list li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #000003;
+  break-inside: avoid;      /* Prevent item breaking between columns */
+}
+
+
+.tags-list li a {
+  color: #0064cf;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tags-list li a:hover{
+  text-decoration: underline  ;
 }
 
 
@@ -344,7 +395,30 @@ body {
 .scroll-top:hover {
   background-color: #e0a800;
 }
+.hamburger {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: #333;
+  margin: 10px 20px;
+  cursor: pointer;
+  z-index: 999;
+}
 
+/* Toggle menu container */
+#mobile-categories {
+  display: none;
+  position: absolute;
+  top: 10px; /* Adjust this value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; /* optional */
+  background-color: #fff; /* optional */
+  z-index: 999; /* to keep it above other elements */
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* optional */
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .content-area {
@@ -354,5 +428,22 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .hamburger {
+    display: block;
+  }
+
+  .sidebar {
+    display: none; /* hide full sidebar */
+  }
+
+  
+#mobile-categories.active {
+  display: flex;
+  margin-top: 80px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 }
 
