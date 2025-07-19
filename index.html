@@ -1,92 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sammy's MindChirps</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="site-header">
-  <div class="header-inner">
-    <img src="https://www.mindchirps.com/image/1598179803.PNG" alt="MindChirps Logo" class="logo">
-    <img src="assets/logo2.png" class="logo">
-  </div>
-</header>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sammy's MindChirps</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="site-header">
+    <div class="header-inner">
+      <img src="https://www.mindchirps.com/image/1598179803.PNG" alt="MindChirps Logo" class="logo">
+      <img src="assets/logo2.png" class="logo">
+    </div>
+  </header>
 
 
 
-  <main class="content-area container">
-    <section class="posts">
-      <!-- Repeat this article block for each post -->
-      <article class="card">
-        <h2>Book Review: Hooked by Nir Eyal</h2>
-        <div class="article-content">
-            <img src="https://www.mindchirps.com/images/blog/images/16683439266370e8768b13b" alt="Hooked Book" class="card-img">
-            <p>Why do we keep returning to the same apps over and over? In “Hooked,” Nir Eyal argues...<br>
-             <a href="#" class="read-more">Continue Reading →</a></p>
-        </div>
-        <div class="post-bottom">
-            <button>Book Reviews</button>
-        </div>
-      </article>
+    <main class="content-area container">
+      <section class="posts">
+        <!-- Repeat this article block for each post -->
+        <article class="card">
+          <h2 class="header-cls">Book Review: Hooked by Nir Eyal</h2>
+          <div class="article-content">
+              <img src="https://www.mindchirps.com/images/blog/images/16683439266370e8768b13b" alt="Hooked Book" class="card-img">
+              <p>Why do we keep returning to the same apps over and over? In “Hooked,” Nir Eyal argues...<br>
+              <a href="#" class="read-more">Continue Reading →</a></p>
+          </div>
+          <div class="post-bottom">
+              <button>Book Reviews</button>
+          </div>
+        </article>
 
-      <article class="card">
-        <h2>Movie Review: Dune – A Visual Epic</h2>
-        <div class="article-content">
-             <img src="https://www.mindchirps.com/images/blog/images/16683439266370e8768b13b" alt="Movie Poster" class="card-img">
-             <p>Denis Villeneuve’s “Dune” brings the desert planet Arrakis vividly to life...</p>
-        </div>
-       
-        <a href="#" class="read-more">Continue Reading →</a>
-        <div class="post-bottom">
-            <button>Book Reviews</button>
-        </div>
-      </article>
-      <!-- Add more posts as needed -->
-    </section>
-
-    <aside class="sidebar">
-      <section class="widget">
-        <h3>Newsletter</h3>
-        <form>
-          <input type="email" placeholder="Your email..." required>
-          <button type="submit">Subscribe</button>
-        </form>
+        <article class="card">
+          <h2 class="header-cls">Movie Review: Dune – A Visual Epic</h2>
+          <div class="article-content">
+              <img src="https://www.mindchirps.com/images/blog/images/16683439266370e8768b13b" alt="Movie Poster" class="card-img">
+              <p>Denis Villeneuve’s “Dune” brings the desert planet Arrakis vividly to life...<br>
+                <a href="#" class="read-more"> Continue Reading →</a>
+              </p>
+          </div>
+        
+          
+          <div class="post-bottom">
+              <button>Book Reviews</button>
+          </div>
+        </article>
+        <!-- Add more posts as needed -->
       </section>
 
-      <section class="widget about">
-        <h3>About Sammy</h3>
-        <p>Welcome to my personal lab of thoughts—MindChirps is where I share insights, experiments, and reflections across books, films, and life.</p>
-      </section>
+      <aside class="sidebar">
+        <section class="widget">
+          <h3 class="header-cls">Newsletter</h3>
+          <form class="section-cls">
+            <input type="email" placeholder="Your email..." required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </section>
 
-      <section class="widget">
-        <h3>Categories</h3>
-        <ul>
-          <li>Self Help (4)</li>
-          <li>Psychology (3)</li>
-          <li>Tech & Apps (5)</li>
-          <li>Science (2)</li>
+        <section class="widget about">
+          <h3 class="header-cls">About Sammy</h3>
+          <p class="section-cls">Hello! Welcome to Sammy's MindChirps. I'm glad you are here. To me, the word LIFE is an acronym of Laboratory with Infinite Freedom to Experiment. It's more like a kaleidoscope offering amazing learning opportunities as we grow and explore various facets of life. So this blog is a platform where I share anything that I find interesting (with my two cents, of course :D). I assure that you will have some new learning when you exit the blog. And do share your feeback on the blog or anything you want me to write about in this blog by dropping an email to mindchirps@gmail.com</p>
+        </section>
+
+    <section class="widget">
+    <h3 class="header-cls">Categories</h3>
+    <ul class="section-cls">
+      <li>
+        <div class="dropdown" onclick="toggleDropdown(this)">Self Help (4)</div>
+        <ul class="submenu">
+          <li><a href="">Productivity</a></li>
+          <li><a href="">Habits</a></li>
+          <li><a href="">Time Management</a></li>
         </ul>
-      </section>
+      </li>
+      <li>
+        <div class="dropdown" onclick="toggleDropdown(this)">Psychology (3)</div>
+        <ul class="submenu">
+          <li><a href="">Behavior</a></li>
+          <li><a href="">Cognitive</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="dropdown" onclick="toggleDropdown(this)">Tech & Apps (5)</div>
+        <ul class="submenu">
+          <li><a href="">Mobile Apps</a></li>
+          <li><a href="">Web Tools</a></li>
+          <li><a href="">AI Tools</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="dropdown" onclick="toggleDropdown(this)">Science (2)</div>
+        <ul class="submenu">
+          <li><a href="">Physics</a></li>
+          <li><a href="">Biology</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
 
-      <section class="widget">
-        <h3>Tags</h3>
-        <div class="tags">
-          <span>Non‑fiction</span>
-          <span>Technology</span>
-          <span>Reviews</span>
-          <span>Life Lessons</span>
-        </div>
-      </section>
-    </aside>
-  </main>
+        <section class="widget">
+          <h3 class="header-cls">Tags</h3>
+          <div class="tags " >
+            <ul>
+              <li><a href>Technology</a></li>
+              <li><a href>Non‑fiction</ahref></li>
+              <li><a href>Reviews</a></li>
+              <li><a href>Life Lessons</a></li>
+            </ul>
+          </div>
+        </section>
+      </aside>
+    </main>
 
-  <footer class="site-footer container">
-    <p>© 2025 Sammy's MindChirps. All rights reserved.</p>
-    <p>Logo credits: Ms. G. D. Janani | Developed &amp; Hosted by 8Queens</p>
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+      </div>
+
+      <p>© All rights reserved by <strong>Sammy's MindChirps</strong></p>
+      <p>Logo credits: M. Prem kumar</p>
+      <p>Developed and Hosted by Prem kumar</p>
+
+      <a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+    </div>
   </footer>
-</body>
-</html>
+
+  </body>
+  <script>
+    function toggleDropdown(element) {
+      element.classList.toggle("open");
+      const submenu = element.nextElementSibling;
+      submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+    }
+  </script>
+  </html>

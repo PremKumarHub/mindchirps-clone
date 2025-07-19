@@ -3,12 +3,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   color: #333;
   background: #f9f9f9;
+  background-image: url(https://www.mindchirps.com/background/background15.jpg);
 }
 
 /* Container */
@@ -19,11 +21,7 @@ body {
 }
 
 /* Header */
-..site-header {
-  background: #fff;
-  padding: 0.5rem 0; /* reduced padding */
-  border-bottom: 1px solid #e0e0e0;
-}
+
 
 .logo {
   height: 50px; /* or 60px if you prefer */
@@ -37,7 +35,7 @@ body {
   display: flex;
   align-items: center; /* vertical centering */
   gap: 1rem; /* space between logo and title */
-  height: 120px;
+  height: 100px;
   margin: 0 auto;
   padding: 0 1rem;
   background-color:rgb(0, 86, 95);
@@ -47,22 +45,38 @@ body {
 
 /* Content Area */
 .content-area {
+  
   display: flex;
-  gap: 2rem;
-  padding: 2rem 0;
+  padding: 1rem; /* Instead of 1rem 0 + 3rem left */
+  gap: 1rem;     /* Optional: to control spacing between posts and sidebar */
 }
+
+
 
 /* Posts Grid */
 .posts {
+  flex:3;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* adds space between cards */
+  gap: 10px; /* adds space between cards */
   padding: 20px;
 }
 .post-bottom{
-    padding-top: 20px;
+    
+    background-color: rgb(240, 237, 231);
+    margin-top: 10px;
+    padding: 10px;
+    padding-top: 10px;
     text-align: end;
+}
+.post-bottom button{
+  padding:5px;
+  background-color: #383434;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
 }
 
 .card {
@@ -72,22 +86,26 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: 16px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 5px;
 }
 
 
 .card-img {
   width: 20%;
-  height: auto; /* maintain aspect ratio */
+  height: 130px; /* maintain aspect ratio */
   object-fit: cover;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
-.card h2 {
+.header-cls{
   font-size: 1.2rem;
-  margin: 0.75rem 1rem 0.25rem;
+  height:50px;
+  padding-left: 25px;
+  padding:10px;
   background-color:rgb(0, 86, 95);
-   color:#c3f4ff;
+  color:#c3f4ff;
 }
 .card p {
   flex: 1;
@@ -96,6 +114,7 @@ body {
 
 .article-content{
     display:flex;
+    margin-top: 10px;
 }
 .article-content p{
   width: 80%;
@@ -103,7 +122,7 @@ body {
   font-size: 16px;
 }
 .read-more {
-  margin: 0 1rem 1rem;
+  margin: 0 ;
   color: #4a90e2;
   text-decoration: none;
   font-weight: 500;
@@ -118,17 +137,18 @@ body {
 }
 .widget {
   background: #fff;
-  padding: 1rem;
+  padding-top: none;
+ 
+
+ 
   margin-bottom: 1.5rem;
   border-radius: 5px;
 }
 .widget h3 {
+  margin-top: 0;
   margin-bottom: 0.75rem;
 }
-.widget form {
-  display: flex;
-  gap: 0.5rem;
-}
+
 .widget input[type="email"] {
   flex: 1;
   padding: 0.5rem;
@@ -152,6 +172,79 @@ body {
 .widget ul {
   list-style: disc inside;
 }
+.section-cls {
+  display: flex;
+  padding: 10px;
+  text-align: justify;
+  font-size: large;
+  flex-direction: column;
+  gap: 10px; /* Adds space between input and button */
+  width: 100%; /* Optional: stretch to full width */
+ ; /* Optional: limit form width */
+}
+.section-cls button {
+  width: fit-content;
+  align-self: center;
+}
+
+
+.section-cls li{
+  list-style: none;
+}
+.submenu li {
+  list-style: none; /* Remove default bullet */
+  position: relative;
+  padding-left: 20px; /* Space for tick */
+}
+.submenu li a{
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+}
+.submenu li a:hover{
+  text-decoration: underline;
+}
+.submenu li::before {
+  content: "✔";
+  color: rgb(14, 14, 14);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+  .dropdown {
+    cursor: pointer;
+    user-select: none;
+    padding: 5px 0;
+    font-weight: bold;
+    list-style: none;
+  }
+  .dropdown:hover{
+    text-decoration: underline;
+  }
+  .dropdown::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 6px;
+    transition: transform 0.2s;
+  }
+
+  .dropdown.open::before {
+    content: "▼";
+  }
+
+  .submenu {
+    display: none;
+    list-style:none;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+
+  .submenu li {
+    font-weight: normal;
+    margin: 4px 0;
+  }
+ 
 .tags span {
   display: inline-block;
   padding: 0.3rem 0.6rem;
@@ -160,14 +253,96 @@ body {
   border-radius: 3px;
   font-size: 0.9rem;
 }
+.tags ul {
+  
+  padding-left: 20px; /* Needed to show bullets properly */
+}
+
 
 /* Footer */
-.site-footer {
+.main-footer {
+  background-color: #143b3e;
+  color: white;
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
   text-align: center;
-  padding: 1.5rem 0;
-  background: #fff;
-  border-top: 1px solid #e0e0e0;
-  font-size: 0.9rem;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;
+}
+
+.main-footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.scroll-top {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: #f9d342;
+  color: black;
+  padding: 10px 12px;
+  border-radius: 50%;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-top:hover {
+  background-color: #e6c200;
+}
+
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffc107;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffc107;
+  padding: 10px;
+  border-radius: 4px;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.scroll-top:hover {
+  background-color: #e0a800;
 }
 
 /* Responsive Design */
@@ -180,3 +355,4 @@ body {
     align-items: center;
   }
 }
+
