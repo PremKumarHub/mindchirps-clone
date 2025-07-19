@@ -82,7 +82,7 @@ body {
 .card {
   background: #fff;
   border-radius: 5px;
-  width:70%;
+  width:60%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -93,7 +93,7 @@ body {
 
 .card-img {
   width: 20%;
-  height: 130px; /* maintain aspect ratio */
+  height: auto; /* maintain aspect ratio */
   object-fit: cover;
   margin-top: 20px;
   margin-left: 20px;
@@ -114,12 +114,13 @@ body {
 
 .article-content{
     display:flex;
+    align-items: center;
     margin-top: 10px;
 }
 .article-content p{
-  width: 80%;
-  padding: 15px;
-  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
 }
 .read-more {
   margin: 0 ;
@@ -421,6 +422,9 @@ body {
 }
 /* Responsive Design */
 @media (max-width: 768px) {
+  .card{
+    width: 90%;
+  }
   .content-area {
     flex-direction: column;
   }
@@ -432,9 +436,6 @@ body {
     display: block;
   }
 
-  .sidebar {
-    display: none; /* hide full sidebar */
-  }
 
   
 #mobile-categories.active {
