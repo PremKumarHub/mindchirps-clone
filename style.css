@@ -400,11 +400,13 @@ body {
   font-size: 26px;
   background: none;
   border: none;
-  color: #333;
-  margin: 10px 20px;
+  color: white;
+  margin: 0;               /* Remove unnecessary margin */
+  padding: 10px;
   cursor: pointer;
   z-index: 999;
 }
+
 
 /* Toggle menu container */
 #mobile-categories {
