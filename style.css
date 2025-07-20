@@ -73,14 +73,17 @@ body {
     text-align: end;
 }
 .post-bottom button{
-  padding:5px;
-  background-color: #888484;
+  padding:8px;
+  background-color: #615c5c;
   color: white;
+  font-size: medium;
   cursor: pointer;
   border-radius: 5px;
   border: none;
 }
-
+.post-bottom button:hover{
+  background-color: #3a3737 ;
+}
 .card {
   background: #fff;
   border-radius: 5px;
@@ -180,7 +183,7 @@ body {
   
 }
 .widget {
-  width: 70%;
+  width: 300px;
   background: #fff;
   padding-top: none;
   margin-bottom: 1.5rem;
@@ -435,9 +438,11 @@ body {
     width: 110%;
     
   }
-  
+  scroll-top {
+    right: 10px; /* move slightly inward on small screens */
+  }
   .widget{
-    width: 110%;
+    width: 100%;
     align-items: center;
  
     
