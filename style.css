@@ -55,6 +55,7 @@ body {
 
 /* Posts Grid */
 .posts {
+  justify-content: end;
   flex:3;
   display: flex;
   flex-direction: column;
@@ -63,7 +64,8 @@ body {
   padding: 20px;
 }
 .post-bottom{
-    
+    border-width: 600px;
+    border-top: 6px solid rgb(240, 237, 231);
     background-color: rgb(240, 237, 231);
     margin-top: 10px;
     padding: 10px;
@@ -72,7 +74,7 @@ body {
 }
 .post-bottom button{
   padding:5px;
-  background-color: #383434;
+  background-color: #888484;
   color: white;
   cursor: pointer;
   border-radius: 5px;
@@ -82,7 +84,8 @@ body {
 .card {
   background: #fff;
   border-radius: 5px;
-  width:80%;
+  width:70%;
+ 
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -122,6 +125,9 @@ body {
   width: 100%;
   padding: 10px;
   font-size: 20px;
+}
+.article-content p a{
+  color: #000;
 }
 .read-more {
   margin: 0 ;
@@ -402,7 +408,7 @@ body {
   border: none;
   color: white;
   margin: 0;               /* Remove unnecessary margin */
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
   z-index: 999;
 }
@@ -425,7 +431,17 @@ body {
 @media (max-width: 768px) {
   .card{
     width: 110%;
+    
   }
+  .article-content{
+    display: block;
+    padding: 5px;
+    text-align: center;
+  }
+  .article-content p{
+    text-align: left;
+  }
+
   .content-area {
     flex-direction: column;
   }
