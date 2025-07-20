@@ -462,7 +462,9 @@ body {
     display: block;
   }
 
-
+.header-inner{
+  gap:3px;
+}
   
 #mobile-categories.active {
   display: flex;
